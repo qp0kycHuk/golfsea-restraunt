@@ -1,7 +1,7 @@
 const elementsSizes = {
-  xs: '24px',
+  xs: '28px',
   sm: '32px',
-  base: '50px',
+  base: '48px',
   lg: '60px',
   xl: '72px',
 }
@@ -27,10 +27,10 @@ module.exports = {
       sm: 580 + 'px',
       md: 720 + 'px',
       lg: 1170 + 'px',
-      xl: 1270 + 'px',
+      xl: 1230 + 'px',
     },
     colors: {
-      primary: '#b71540',
+      primary: '#C8A070',
       sec: '#CE9B44',
       blue: '#2980b9',
       red: '#c0392b',
@@ -38,7 +38,7 @@ module.exports = {
       yellow: '#f39c12',
       gray: '#333',
       white: '#fff',
-      black: '#000',
+      black: '#1E1E1E',
     },
     fontFamily: {
       base: 'var(--font-base)',

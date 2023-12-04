@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Ysabeau;
+  font-weight: bold;
+  font-style : normal;
+  src        : url('./Ysabeau-ExtraBold.eot');
+  src        : local('Ysabeau ExtraBold'), local('Ysabeau-ExtraBold'),
+    url('./Ysabeau-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-ExtraBold.woff2') format('woff2'),
+    url('./Ysabeau-ExtraBold.woff') format('woff'),
+    url('./Ysabeau-ExtraBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 900;
+  font-style : italic;
+  src        : url('./Ysabeau-BlackItalic.eot');
+  src        : local('Ysabeau Black Italic'), local('Ysabeau-BlackItalic'),
+    url('./Ysabeau-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-BlackItalic.woff2') format('woff2'),
+    url('./Ysabeau-BlackItalic.woff') format('woff'),
+    url('./Ysabeau-BlackItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 600;
+  font-style : normal;
+  src        : url('./Ysabeau-SemiBold.eot');
+  src        : local('Ysabeau SemiBold'), local('Ysabeau-SemiBold'),
+    url('./Ysabeau-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-SemiBold.woff2') format('woff2'),
+    url('./Ysabeau-SemiBold.woff') format('woff'),
+    url('./Ysabeau-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 100;
+  font-style : normal;
+  src        : url('./Ysabeau-Thin.eot');
+  src        : local('Ysabeau Thin'), local('Ysabeau-Thin'),
+    url('./Ysabeau-Thin.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Thin.woff2') format('woff2'),
+    url('./Ysabeau-Thin.woff') format('woff'),
+    url('./Ysabeau-Thin.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: bold;
+  font-style : normal;
+  src        : url('./Ysabeau-Bold.eot');
+  src        : local('Ysabeau Bold'), local('Ysabeau-Bold'),
+    url('./Ysabeau-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Bold.woff2') format('woff2'),
+    url('./Ysabeau-Bold.woff') format('woff'),
+    url('./Ysabeau-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: bold;
+  font-style : italic;
+  src        : url('./Ysabeau-ExtraBoldItalic.eot');
+  src        : local('Ysabeau ExtraBold Italic'), local('Ysabeau-ExtraBoldItalic'),
+    url('./Ysabeau-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-ExtraBoldItalic.woff2') format('woff2'),
+    url('./Ysabeau-ExtraBoldItalic.woff') format('woff'),
+    url('./Ysabeau-ExtraBoldItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 200;
+  font-style : normal;
+  src        : url('./Ysabeau-ExtraLight.eot');
+  src        : local('Ysabeau ExtraLight'), local('Ysabeau-ExtraLight'),
+    url('./Ysabeau-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-ExtraLight.woff2') format('woff2'),
+    url('./Ysabeau-ExtraLight.woff') format('woff'),
+    url('./Ysabeau-ExtraLight.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 200;
+  font-style : italic;
+  src        : url('./Ysabeau-ExtraLightItalic.eot');
+  src        : local('Ysabeau ExtraLight Italic'), local('Ysabeau-ExtraLightItalic'),
+    url('./Ysabeau-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-ExtraLightItalic.woff2') format('woff2'),
+    url('./Ysabeau-ExtraLightItalic.woff') format('woff'),
+    url('./Ysabeau-ExtraLightItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 300;
+  font-style : normal;
+  src        : url('./Ysabeau-Light.eot');
+  src        : local('Ysabeau Light'), local('Ysabeau-Light'),
+    url('./Ysabeau-Light.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Light.woff2') format('woff2'),
+    url('./Ysabeau-Light.woff') format('woff'),
+    url('./Ysabeau-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 500;
+  font-style : normal;
+  src        : url('./Ysabeau-Medium.eot');
+  src        : local('Ysabeau Medium'), local('Ysabeau-Medium'),
+    url('./Ysabeau-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Medium.woff2') format('woff2'),
+    url('./Ysabeau-Medium.woff') format('woff'),
+    url('./Ysabeau-Medium.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: bold;
+  font-style : italic;
+  src        : url('./Ysabeau-BoldItalic.eot');
+  src        : local('Ysabeau Bold Italic'), local('Ysabeau-BoldItalic'),
+    url('./Ysabeau-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-BoldItalic.woff2') format('woff2'),
+    url('./Ysabeau-BoldItalic.woff') format('woff'),
+    url('./Ysabeau-BoldItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 300;
+  font-style : italic;
+  src        : url('./Ysabeau-LightItalic.eot');
+  src        : local('Ysabeau Light Italic'), local('Ysabeau-LightItalic'),
+    url('./Ysabeau-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-LightItalic.woff2') format('woff2'),
+    url('./Ysabeau-LightItalic.woff') format('woff'),
+    url('./Ysabeau-LightItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 100;
+  font-style : italic;
+  src        : url('./Ysabeau-ThinItalic.eot');
+  src        : local('Ysabeau Thin Italic'), local('Ysabeau-ThinItalic'),
+    url('./Ysabeau-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-ThinItalic.woff2') format('woff2'),
+    url('./Ysabeau-ThinItalic.woff') format('woff'),
+    url('./Ysabeau-ThinItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: normal;
+  font-style : italic;
+  src        : url('./Ysabeau-Italic.eot');
+  src        : local('Ysabeau Italic'), local('Ysabeau-Italic'),
+    url('./Ysabeau-Italic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Italic.woff2') format('woff2'),
+    url('./Ysabeau-Italic.woff') format('woff'),
+    url('./Ysabeau-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 500;
+  font-style : italic;
+  src        : url('./Ysabeau-MediumItalic.eot');
+  src        : local('Ysabeau Medium Italic'), local('Ysabeau-MediumItalic'),
+    url('./Ysabeau-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-MediumItalic.woff2') format('woff2'),
+    url('./Ysabeau-MediumItalic.woff') format('woff'),
+    url('./Ysabeau-MediumItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 600;
+  font-style : italic;
+  src        : url('./Ysabeau-SemiBoldItalic.eot');
+  src        : local('Ysabeau SemiBold Italic'), local('Ysabeau-SemiBoldItalic'),
+    url('./Ysabeau-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-SemiBoldItalic.woff2') format('woff2'),
+    url('./Ysabeau-SemiBoldItalic.woff') format('woff'),
+    url('./Ysabeau-SemiBoldItalic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 900;
+  font-style : normal;
+  src        : url('./Ysabeau-Black.eot');
+  src        : local('Ysabeau Black'), local('Ysabeau-Black'),
+    url('./Ysabeau-Black.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Black.woff2') format('woff2'),
+    url('./Ysabeau-Black.woff') format('woff'),
+    url('./Ysabeau-Black.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: normal;
+  font-style : normal;
+  src        : url('./Ysabeau-Regular.eot');
+  src        : local('Ysabeau Regular'), local('Ysabeau-Regular'),
+    url('./Ysabeau-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./Ysabeau-Regular.woff2') format('woff2'),
+    url('./Ysabeau-Regular.woff') format('woff'),
+    url('./Ysabeau-Regular.ttf') format('truetype');
+  font-display: swap;
+}

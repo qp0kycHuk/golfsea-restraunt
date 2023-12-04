@@ -80,7 +80,7 @@ module.exports = {
       patterns: [{ from: './src/img/', to: './img/' }, ...generateCopyPlugins('./src/html-dialogs')],
     }),
     new FaviconsWebpackPlugin({
-      logo: './src/favicon.png',
+      logo: './src/favicon.jpg',
       devMode: 'webapp',
       prefix: 'favicon/',
       favicons: {

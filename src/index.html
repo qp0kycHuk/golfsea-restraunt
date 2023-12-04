@@ -1,17 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
+<%= _.template(require('./html-includes/header.html').default)() %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web developer</title>
-</head>
 
-<body>
-  <header class="header"></header>
-  <section class="started"></section>
-  <footer class="footer"></footer>
-</body>
+<div class="top-image-wrapper overflow-hidden relative">
+  <picture>
+    <source srcset="img/started-min.webp" type="image/webp">
+    <img src="img/started-min.jpg" alt="" class="top-image-img absolute-fit object-top object-cover">
+  </picture>
 
-</html>
+  <header class="header text-white relative" data-animation="fadeIn">
+    <div class="flex max-sm:hidden">
+      <div class="lg:text-xl">г. Геленджик, Стартовая, 1</div>
+    </div>
+    <div class="header-logo">
+      <img src="img/logo-white.png" alt="" class="max-sm:w-16 max-lg:w-24">
+    </div>
+    <div class="flex flex-grow">
+      <div class="ml-auto">
+        <a href="tel:+7 (928) 203-42-00" class="btn btn-white btn-text text-sm lg:text-xl font-semibold">+7 (928) 203-42-00</a>
+        <button class="btn btn-white btn-text font-alt font-semibold uppercase btn-text-border max-lg:text-sm" data-scroll="#calc">задать вопрос</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="started relative text-white">
+    <div class="text-center leading-none started-subtitle opacity-60 text-sm sm:text-xl lg:text-2.5xl " data-animation="fadeInUp">
+      Организация вашего события в эстетичной атмосфере
+    </div>
+    <div class="text-center leading-none started-title mt-4 sm:mt-6 lg:mt-3" data-animation="fadeInUp" data-delay="0.2">
+      Геленджик Гольф Резорт
+    </div>
+  </section>
+
+</div>
+
+<section class="section-padding pb-5">
+  <div class="title text-center uppercase mb-8 sm:mb-12" data-animation="fadeInUp">Организуем любое мероприятие</div>
+  <div class="started-items justify-center gap-y-3 sm:gap-y-5 flex-wrap -mx-2 flex  cursor-pointer" data-scroll="#calc" data-animation="fadeInUp" data-delay="0.3">
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#heart"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Свадьбы</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#wineglass"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Корпоративы</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#rabbit"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Детские</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#stars"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Юбилеи</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#confetti"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Вечеринки</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#microphone"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Конференции</div>
+    </div>
+    <div class="started-item px-2">
+      <div class="started-item-img">
+        <c-icon class="icon" href="img/icons.svg#users"></c-icon>
+      </div>
+      <div class="max-xs:text-xs max-sm:text-sm lg:mt-6">Тимбилдинги</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- <div class="image ratio ratio-[192/70] overflow-hidden " data-animation="fadeIn">
+  <picture>
+    <source srcset="img/started-min.webp" type="image/webp">
+    <img src="img/started-min.jpg" alt="" class="absolute left-0 top-0 w-full object-cover">
+  </picture>
+</div> -->
+
+<!-- 6 площадок на выбор -->
+<section class="section-padding catalog">
+  <div class="title text-center uppercase mb-8 sm:mb-16" data-animation="fadeInUp">6 площадок на выбор</div>
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-8 sm:gap-8">
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/1-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Банкетный зал</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Зал с панорамными окнами, изящным интерьером
+          и потрясающим видом на Черное море
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 140 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/2-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Патио грин</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Панорамная площадка на открытом воздухе
+          для выездных регистраций
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 100 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/3-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Винный погреб</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Уютный зал для камерных мероприятий
+          в винном погребе
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 35 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/4-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Гольф академия</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Отдельно стоящее здание со своей барбекю зоной,
+          тренировочной площадкой, зоной для банкета
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 150 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/5-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Спа комплекс «Олива»</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Открытый бассейн, ресторан, бар, зеленая терраса
+          панорамный вид на бухту Геленджика
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 150 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+    <div class="catalog-item flex flex-col gap-4 sm:gap-8" data-scroll="#calc" data-animation="fadeInUp">
+      <div class="ratio ratio-[378/312]">
+        <img src="img/catalog/6-min.jpg" loading="lazy" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="flex-grow flex flex-col items-start">
+        <div class="font-alt uppercase font-medium sm:text-2xl">Ночной клуб Лагуна</div>
+        <div class="mt-2 sm:mt-4 opacity-80 text-xs sm:text-sm mb-auto">
+          Комфортное и безопасное пространство
+          для отдыха и развлечения всей семьи
+        </div>
+        <div class="flex items-center gap-2 mt-2 sm:mt-6 ">
+          <c-icon class="icon text-2xl text-primary" href="img/icons.svg#user-hands"></c-icon>
+          <div class="uppercase font-medium max-sm:text-sm">до 150 гостей</div>
+        </div>
+        <button class="btn btn-primary btn-text font-alt font-semibold uppercase mt-3 sm:mt-6 btn-text-border">
+          рассчитать стоимость
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about section-padding overflow-hidden">
+  <img src="img/about-lines.svg" alt="" class="about-lines" data-animation="fadeInDown">
+  <div class="title uppercase text-primary" data-animation="fadeInUp">
+    более <span class="font-base">4</span> лет гости
+    доверяют свои
+    события нам
+  </div>
+  <div class="flex flex-col gap-4 sm:gap-6">
+    <div class="flex items-center gap-3" data-animation="fadeInUp">
+      <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#sun-fog"></c-icon>
+      <div class="text-sm sm:text-xl">Панорамный вид на Геленджикскую бухту</div>
+    </div>
+    <div class="flex items-center gap-3" data-animation="fadeInUp">
+      <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#shield-star"></c-icon>
+      <div class="text-sm sm:text-xl">Закрытая территория</div>
+    </div>
+    <div class="flex items-center gap-3" data-animation="fadeInUp">
+      <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#like"></c-icon>
+      <div class="text-sm sm:text-xl">Высокий сервис</div>
+    </div>
+    <div class="flex items-center gap-3" data-animation="fadeInUp">
+      <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#chef-heart"></c-icon>
+      <div class="text-sm sm:text-xl">Изысканная кухня от шеф-повара Аделя Хаматова</div>
+    </div>
+    <div class="flex items-center gap-3" data-animation="fadeInUp">
+      <c-icon class="icon text-3.5xl text-primary" href="img/icons.svg#magic-stick"></c-icon>
+      <div class="text-sm sm:text-xl">Помощь в организации мероприятия</div>
+    </div>
+  </div>
+</section>
+
+<section class="calc section-padding overflow-hidden">
+  <div class="title text-center mb-8 sm:mb-16 uppercase" data-animation="fadeInUp">Рассчитать стоимость банкета</div>
+  <div class="flex">
+    <form class="calc-form" data-animation="fadeInLeft" id="calc">
+      <div>
+        <div class="font-medium mb-2">Формат мероприятия</div>
+        <select name="format" class="input w-full rounded" required>
+          <option value="" selected disabled hidden>Выберите мероприятие</option>
+          <option value="Свадьбы">Свадьбы</option>
+          <option value="Юбилеи">Юбилеи</option>
+          <option value="Детские праздники">Детские праздники</option>
+          <option value="Вечеринки">Вечеринки</option>
+          <option value="Корпоративы">Корпоративы</option>
+          <option value="Конференции">Конференции</option>
+          <option value="Тимбилдинги">Тимбилдинги</option>
+        </select>
+      </div>
+
+      <div class="mt-4">
+        <div class="font-medium mb-2">Дата</div>
+        <div class="relative">
+          <input type="text" name="date" placeholder="_ _._ _._ _ _ _" required class="input rounded w-full" id="calc-datepicker">
+          <c-icon class="icon text-2xl absolute right-4 top-1/2 -translate-y-1/2 opacity-40 pointer-events-none" href="img/icons.svg#calendar"></c-icon>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5 mt-4">
+        <div>
+          <div class="font-medium mb-2">Взрослые</div>
+          <c-counter min="1" max="150" name="count-old"></c-counter>
+        </div>
+        <div>
+          <div class="font-medium mb-2">Дети (от 3 до 14 лет)</div>
+          <c-counter min="1" max="150" name="count-yong"></c-counter>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="font-medium mb-2">Имя</div>
+        <input type="text" placeholder="Напишите имя..." name="name" required class="input rounded w-full">
+      </div>
+      <div class="mt-4">
+        <div class="font-medium mb-2">Ваш телефон</div>
+        <input type="tel" placeholder="+ 7 (_ _ _) _ _ _ - _ _ - _ _" name="phone" required class="input rounded w-full">
+      </div>
+      <div class="mt-4">
+        <div class="font-medium mb-2">Особые пожелания</div>
+        <textarea name="" id="" cols="30" rows="10" class="input rounded w-full h-24" name="question"></textarea>
+      </div>
+      <button class="btn btn-theme-fill mt-8 rounded font-alt uppercase">Узнать стоимость</button>
+      <button type="button" data-fancybox-modal data-src="dialog-policy.html" class="mt-5 hover-underline text-xs opacity-80 text-left">
+        Отправляя форму, Вы даете согласие на обработку Ваших персональных данных
+      </button>
+    </form>
+    <div class="calc-image ml-auto relative" data-animation="fadeInRight" data-delay="0.2">
+      <picture>
+        <source srcset="img/calc-min.webp" type="image/webp">
+        <img src="img/calc-min.jpg" alt="" loading="lazy" class="absolute-fit">
+      </picture>
+    </div>
+  </div>
+</section>
+<script>
+  new AirDatepicker('#calc-datepicker', {
+    toggleSelected: false,
+    autoClose: true
+
+  })
+</script>
+
+<div class="map" id="map">
+
+</div>
+
+
+<%= _.template(require('./html-includes/footer.html').default)() %>

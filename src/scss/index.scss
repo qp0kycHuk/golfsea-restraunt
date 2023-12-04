@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-    @import '@qpokychuk/ripple/index.css';
-    @import "@fancyapps/ui/dist/fancybox/fancybox.css";
-    @import 'swiper/css';
+  @import '@qpokychuk/ripple/index.css';
+  @import "@fancyapps/ui/dist/fancybox/fancybox.css";
+  @import 'swiper/css';
+  @import 'air-datepicker/air-datepicker.css';
 }
 
-@import '@qpokychuk/fonts/inter/index.css';
+
+@import '@qpokychuk/fonts/montserrat/index.css';
+@import '../fonts/ysabeau/index.css';
 @import '../ui/ui-core';
 @import '../scss/frontend--style';
