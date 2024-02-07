@@ -104,14 +104,12 @@ body {
       #BF8F54;
 
     box-shadow:
-      0 2px 0 #A9947E,
-      0 10px 30px 0 rgba(228, 199, 164, 0.70);
+      0 2px 0 #A9947E;
     color: #fff;
 
     &:active {
       box-shadow:
-        0 1px 0 #A9947E,
-        0 10px 30px 0 rgba(228, 199, 164, 0.70);
+        0 1px 0 #A9947E;
     }
 
     @media(hover) {
@@ -267,6 +265,41 @@ body {
   }
 }
 
+.presentation {
+  position      : relative;
+  overflow      : hidden;
+  padding-top   : 88px;
+  padding-bottom: 88px;
+  background    : #0C141E;
+
+  @media(max-width:theme('screens.md')) {
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    text-align    : center;
+  }
+
+  &-lines {
+    position      : absolute;
+    top           : 0;
+    right         : 0;
+    height        : 100%;
+    pointer-events: none;
+  }
+
+  &-image {
+    position      : absolute;
+    top           : 0;
+    left          : 50%;
+    height        : 100%;
+    pointer-events: none;
+
+    @media(max-width:theme('screens.md')) {
+      display: none;
+    }
+  }
+}
+
 .calc {
   &-form {
     flex-shrink: 0;
@@ -340,4 +373,95 @@ body {
   flex-direction : column;
   flex-grow      : 1;
   text-align     : center;
+}
+
+.gallery {
+  &-grid {
+    grid-auto-rows: 242px;
+  }
+
+  &-item {
+    overflow: hidden;
+
+    @media(hover) {
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      transition: .25s;
+    }
+
+  }
+}
+
+.service {
+  background: #0E1825;
+  color     : #fff;
+
+  &-item {
+    padding: 16px;
+    border : 1px solid #222E3E;
+  }
+}
+
+.question {
+  display    : flex;
+  align-items: center;
+  position   : relative;
+  height     : 550px;
+  overflow   : hidden;
+
+  @media(max-width:theme('screens.md')) {
+    height        : auto;
+    padding-top   : 88px;
+    padding-bottom: 88px;
+  }
+
+  &-lines {
+    position      : absolute;
+    top           : 0;
+    left          : 0;
+    height        : 100%;
+    pointer-events: none;
+
+  }
+
+  &-image {
+    position      : absolute;
+    right         : calc(50% + 150px);
+    bottom        : 0;
+    pointer-events: none;
+
+    @media(max-width:theme('screens.md')) {
+      display: none;
+    }
+
+  }
+
+  &-content {
+    position   : relative;
+    width      : 50%;
+    margin-left: auto;
+
+    @media(max-width:theme('screens.lg')) {
+      width: 70%;
+    }
+
+    @media(max-width:theme('screens.md')) {
+      width: 100%;
+    }
+  }
+}
+
+.dialog-form {
+  width    : 500px;
+  max-width: 100%;
+  padding  : 40px;
+
+  @media(max-width:theme('screens.sm')) {
+    padding-right: 15px;
+    padding-left : 15px;
+  }
 }

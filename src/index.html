@@ -310,9 +310,84 @@
   })
 </script>
 
-<div class="map" id="map">
+<section class="presentation section-padding">
+  <img src="img/presentation-lines.svg" alt="" class="presentation-lines" data-animation="fadeInDown">
+  <img src="img/presentation.png" alt="" class="presentation-image" data-animation="fadeInRight">
+  <div class="presentation-content">
+    <div class="title uppercase text-primary" data-animation="fadeInUp">
+      презентация <br>
+      всех площадок
+    </div>
+    <div class="flex mt-14" data-animation="fadeInUp">
+      <button class="btn btn-primary btn-theme-fill rounded font-alt uppercase max-md:mx-auto">скачать презентацию</button>
+    </div>
+  </div>
+</section>
 
-</div>
+<section class="section-padding gallery">
+  <div class="title text-center uppercase mb-8 sm:mb-14" data-animation="fadeInUp">Галерея мероприятий</div>
+  <div class="gallery-grid grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative row-span-2" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative row-span-2" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
 
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative row-span-2" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative row-span-2" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+    <a href="img/test.gif" data-fancybox="gallery" class="gallery-item relative" data-animation="fadeInUp">
+      <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+    </a>
+  </div>
+</section>
+
+<section class="section-padding service">
+  <div class="title text-center uppercase mb-8 sm:mb-16" data-animation="fadeInUp">
+    Услуги для вашего <br>
+    незабываемого торжества
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3">
+    <% for(let i = 0; i < 6; i++) { %>
+    <div class="service-item" data-animation="fadeInUp">
+      <div class="service-item-img ratio ratio-[378/312]">
+        <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+      </div>
+      <div class="font-alt uppercase text-2xl mt-6">
+        Аренда роскошных
+        вилл
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <div class="flex mt-14" data-animation="fadeInUp">
+    <button class="btn btn-primary btn-theme-fill rounded font-alt uppercase mx-auto" data-fancybox-modal data-src="dialog-form.html">отправить заявку</button>
+  </div>
+</section>
+
+<section class="question">
+  <img src="img/question-lines.svg" alt="" class="question-lines" data-animation="fadeInLeft">
+  <img src="img/question.png" alt="" class="question-image" data-animation="fadeInUp">
+  <div class="question-content">
+    <div class="title uppercase" data-animation="fadeInUp">Остались вопросы?</div>
+    <div class="mt-4 opacity-60" data-animation="fadeInUp">Задайте их нашему менеджеру и получите быстрый ответ</div>
+    <div class="flex mt-16" data-animation="fadeInUp">
+      <button class="btn btn-primary btn-theme-fill rounded font-alt uppercase" data-fancybox-modal data-src="dialog-form.html">задать вопрос</button>
+    </div>
+  </div>
+</section>
 
 <%= _.template(require('./html-includes/footer.html').default)() %>
