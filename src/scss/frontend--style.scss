@@ -151,7 +151,14 @@ body {
   }
 
   @media(max-width:theme('screens.sm')) {
-    padding-top: 32px;
+    justify-content: flex-start;
+    min-height     : 100vh;
+    padding-top    : 100px;
+  }
+
+  @media(max-width:theme('screens.sm')) and (max-height:750px) {
+    padding-top: 50px;
+
   }
 
   &-subtitle {
